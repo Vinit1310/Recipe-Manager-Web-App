@@ -319,6 +319,52 @@ article.card div.actions button.btn-delete:hover {
   font-size: 13px;
 }
 
+/* Hide form fields in view mode */
+.modal-form.view-mode .col-left,
+.modal-form.view-mode .col-right {
+  display: none;
+}
+
+.modal-form.view-mode #viewSlider {
+  grid-column: 1 / -1;
+  display: block;
+}
+
+.modal-form #viewSlider {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Slider styles */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 20px;
+}
+
+.slider-track {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slide {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  line-height: 1.6;
+}
+
+.slide strong {
+  color: var(--accent-b);
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
 /* Responsive tweaks */
 @media (max-width: 600px) {
   .controls {
