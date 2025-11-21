@@ -1,4 +1,4 @@
-# 🍽️ Recipe Manager — Cookify
+# 🍽️ Recipe Manager — Cookify by Vinit
 
 A simple and elegant **frontend-only Recipe Manager Web App** built using **HTML, CSS, and JavaScript** with full CRUD operations, image upload, slider-based recipe viewer, and LocalStorage persistence.
 
