@@ -763,61 +763,61 @@ function openEdit(id) {
   showModal();
 }
 
-// Export recipes
-document.getElementById("btnExport").addEventListener("click", () => {
-  const recipes = load();
-  const dataStr = JSON.stringify(recipes, null, 2);
-  const blob = new Blob([dataStr], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
+// // Export recipes
+// document.getElementById("btnExport").addEventListener("click", () => {
+//   const recipes = load();
+//   const dataStr = JSON.stringify(recipes, null, 2);
+//   const blob = new Blob([dataStr], { type: "application/json" });
+//   const url = URL.createObjectURL(blob);
 
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `recipes-backup-${new Date().toISOString().split("T")[0]}.json`;
-  a.click();
+//   const a = document.createElement("a");
+//   a.href = url;
+//   a.download = `recipes-backup-${new Date().toISOString().split("T")[0]}.json`;
+//   a.click();
 
-  URL.revokeObjectURL(url);
-  alert("Recipes exported successfully!");
-});
+//   URL.revokeObjectURL(url);
+//   alert("Recipes exported successfully!");
+// });
 
-// Import recipes
-const importFileInput = document.getElementById("importFile");
+// // Import recipes
+// const importFileInput = document.getElementById("importFile");
 
-document.getElementById("btnImport").addEventListener("click", () => {
-  importFileInput.click();
-});
+// document.getElementById("btnImport").addEventListener("click", () => {
+//   importFileInput.click();
+// });
 
-importFileInput.addEventListener("change", (e) => {
-  const file = e.target.files[0];
-  if (!file) return;
+// importFileInput.addEventListener("change", (e) => {
+//   const file = e.target.files[0];
+//   if (!file) return;
 
-  const reader = new FileReader();
-  reader.onload = (event) => {
-    try {
-      const imported = JSON.parse(event.target.result);
+//   const reader = new FileReader();
+//   reader.onload = (event) => {
+//     try {
+//       const imported = JSON.parse(event.target.result);
 
-      if (!Array.isArray(imported)) {
-        alert("Invalid file format!");
-        return;
-      }
+//       if (!Array.isArray(imported)) {
+//         alert("Invalid file format!");
+//         return;
+//       }
 
-      if (confirm("Merge with existing recipes? (Cancel = Replace all)")) {
-        const existing = load();
-        const merged = [...existing, ...imported];
-        save(merged);
-      } else {
-        save(imported);
-      }
+//       if (confirm("Merge with existing recipes? (Cancel = Replace all)")) {
+//         const existing = load();
+//         const merged = [...existing, ...imported];
+//         save(merged);
+//       } else {
+//         save(imported);
+//       }
 
-      render();
-      alert(`Successfully imported ${imported.length} recipes!`);
-    } catch (err) {
-      alert("Error reading file: " + err.message);
-    }
-  };
+//       render();
+//       alert(`Successfully imported ${imported.length} recipes!`);
+//     } catch (err) {
+//       alert("Error reading file: " + err.message);
+//     }
+//   };
 
-  reader.readAsText(file);
-  importFileInput.value = "";
-});
+//   reader.readAsText(file);
+//   importFileInput.value = "";
+// });
 
 // delete
 function handleDelete(id) {
