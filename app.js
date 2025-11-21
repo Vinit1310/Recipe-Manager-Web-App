@@ -149,7 +149,7 @@ function seedIfEmpty() {
       prepTime: 8,
       difficulty: "Easy",
       category: "Breakfast",
-      image: "images/Masala-Omlette.jpg",
+      image: "images/Masala-Omelette.jpg",
       createdAt: new Date().toISOString(),
     },
 
