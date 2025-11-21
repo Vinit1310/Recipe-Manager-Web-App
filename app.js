@@ -439,7 +439,7 @@ function seedIfEmpty() {
       prepTime: 5,
       difficulty: "Easy",
       category: "Drinks",
-      image: "chocolate-milkshake.jpg",
+      image: "images/chocolate-milkshake.jpg",
       createdAt: new Date().toISOString(),
     },
   ];
