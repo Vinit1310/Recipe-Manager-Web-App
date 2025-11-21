@@ -101,7 +101,7 @@ function seedIfEmpty() {
       prepTime: 10,
       difficulty: "Easy",
       category: "Breakfast",
-      image: "images\bread-omlette.png",
+      image: "images/bread-omlette.png",
       createdAt: new Date().toISOString(),
     },
 
@@ -149,7 +149,7 @@ function seedIfEmpty() {
       prepTime: 8,
       difficulty: "Easy",
       category: "Breakfast",
-      image: images / Masala - Omlette.jpg,
+      image: "images/Masala-Omlette.jpg",
       createdAt: new Date().toISOString(),
     },
 
@@ -214,7 +214,7 @@ function seedIfEmpty() {
       prepTime: 35,
       difficulty: "Medium",
       category: "Lunch",
-      image: images / veg - pulao.jpg,
+      image: "images/veg-pulao.jpg",
       createdAt: new Date().toISOString(),
     },
 
@@ -294,7 +294,7 @@ function seedIfEmpty() {
       prepTime: 30,
       difficulty: "Medium",
       category: "Dinner",
-      image: images / paneer - butter - masala.webp,
+      image: "images/paneer-butter-masala.webp",
       createdAt: new Date().toISOString(),
     },
 
@@ -377,7 +377,7 @@ function seedIfEmpty() {
       prepTime: 25,
       difficulty: "Easy",
       category: "Breakfast",
-      image: images / aloo - paratha.webp,
+      image: "images/aloo-paratha.webp",
       createdAt: new Date().toISOString(),
     },
 
@@ -439,7 +439,7 @@ function seedIfEmpty() {
       prepTime: 5,
       difficulty: "Easy",
       category: "Drinks",
-      image: chocolate - milkshake.jpg,
+      image: "chocolate-milkshake.jpg",
       createdAt: new Date().toISOString(),
     },
   ];
