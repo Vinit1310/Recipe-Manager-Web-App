@@ -124,13 +124,20 @@ This key contains an **array of recipe objects**.
 
 ## 🐞 Known Issues
 
-These issues do not break the app but may appear:
+(Updated — old issues fixed)
+
+❌ Auto-numbering issue for steps — **RESOLVED**
+
+❌ Favicon not rendering — **FIXED**
+
+❌ Theme toggle did not affect navbar — **FIXED**
+
+❌ Card UI minor alignment shifts — **FIXED**
+**These issues do not break the app but may appear:**
 
 1. **Form fields show during view mode** — CSS may need minor tweaks
 2. **Slider height increases for long content**
-3. **Image preview may fail** if the URL has CORS restrictions
-4. **LocalStorage full error** when storing many large images
-5. **Accessibility warnings** if labels do not contain `for=""`
+3. **Accessibility warnings** if labels do not contain `for=""`
 
 ---
 
