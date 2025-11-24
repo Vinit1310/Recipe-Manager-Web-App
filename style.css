@@ -1,7 +1,7 @@
 /* Purple Gradient Theme — modern, clean */
 :root {
   --bg-1: #0b0026;
-  --bg-2: #1a003d;
+  --bg-2: rgb(26, 0, 61);
   --card: rgba(255, 255, 255, 0.04);
   --muted: #c7b9ff;
   --accent-a: #7c3aed;
@@ -14,6 +14,9 @@
   --text-primary: #efeaff;
   --text-secondary: #c7b9ff;
   color-scheme: dark;
+  --searchbar-bg: #f5f5f5;
+  --searchbar-text: #000;
+  --searchbar-icon: #000;
 }
 
 * {
@@ -73,8 +76,16 @@ body.light-theme {
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  background-color: rgba(40, 1, 92, 0.873);
   border-radius: 14px;
+  padding: 4px;
+}
+
+body.light-theme .controls {
+  background: var(--searchbar-bg);
+  color: var(--searchbar-text);
+  border: 1px solid #6b4ca3;
   padding: 4px;
 }
 
@@ -102,11 +113,13 @@ body.light-theme {
 }
 
 body.light-theme .theme-toggle {
-  background: rgba(124, 58, 237, 0.1);
+  background: rgba(140, 128, 162, 0.1);
+  color: var(--searchbar-icon);
 }
 
 body.light-theme .search {
-  background: rgba(124, 58, 237, 0.03);
+  background: var(--searchbar-bg);
+  color: var(--searchbar-text);
 }
 
 body.light-theme .select {
